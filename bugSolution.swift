@@ -1,0 +1,1 @@
+func myFunc(param: Int) -> Int {     if param == 0 {         return 1     } else {         var result = 1         for i in 1...param {             result *= i         }         return result     } }This iterative version avoids the recursive calls completely, ensuring the function will never hit the recursion depth limit, preventing the stack overflow error.
